@@ -1,5 +1,5 @@
 {
-  "npmScope": "web",
+  "npmScope": "dreamer",
   "affected": {
     "defaultBase": "master"
   },
@@ -30,7 +30,7 @@
       }
     ]
   },
-  "defaultProject": "server",
+  "defaultProject": "client",
   "generators": {
     "@nrwl/react": {
       "application": {
