@@ -1,17 +1,15 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 
-function CustomApp({ Component, pageProps }: AppProps) {
-  return (
-    <>
-      <Head>
-        <title>Welcome to client!</title>
-      </Head>
-      <main className="app">
-        <Component {...pageProps} />
-      </main>
-    </>
-  )
-}
+export const App = ({ Component, pageProps }: AppProps) => (
+  <>
+    <Head>
+      <title>Welcome to Dreamer!</title>
+    </Head>
+    <main>
+      <Component {...pageProps} />
+    </main>
+  </>
+)
 
-export default CustomApp
+export default App
