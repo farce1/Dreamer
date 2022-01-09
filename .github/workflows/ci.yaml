@@ -22,18 +22,10 @@ jobs:
       - run: npm install
       - run: npx nx affected --target=build --base=main~1 --head=main --parallel --max-parallel=3
       - run: npx nx affected --target=test --base=main~1 --head=main --parallel --max-parallel=2
-      - uses: actions/checkout@v2
-      - name: Bump version and push tag
-        id: tag_version
-        uses: mathieudutour/github-tag-action@v6.0
-        with:
-          github_token: ${{ secrets.TOKEN }}
-      - name: Create a GitHub release
-        uses: ncipollo/release-action@v1
-        with:
-          tag: ${{ steps.tag_version.outputs.new_tag }}
-          name: Release ${{ steps.tag_version.outputs.new_tag }}
-          body: ${{ steps.tag_version.outputs.changelog }}
+      - name: 'CI: Bump version'
+        uses: phips28/gh-action-bump-version@v9.0.1
+
+
   pr:
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'pull_request' }}
