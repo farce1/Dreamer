@@ -25,14 +25,9 @@ jobs:
       - run: npm install
       - run: npx nx affected --target=build --parallel --max-parallel=3
       - run: npx nx affected --target=test --parallel --max-parallel=2
-      - name: CI version bump
+      - name: Automated Version Bump
         uses: phips28/gh-action-bump-version@v9.0.1
-          env:
-            GITHUB_TOKEN: ${{ secrets.TOKEN }}
-          with:
-            tag-prefix:  'v'
-            target-branch: 'main'
-            commit-message: 'CI: bumps version to {{version}} [skip ci]'
+
   pr:
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'pull_request' }}
