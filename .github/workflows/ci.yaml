@@ -25,7 +25,6 @@ jobs:
       - run: npm install
       - run: npx nx affected --target=build --parallel --max-parallel=3
       - run: npx nx affected --target=test --parallel --max-parallel=2
-        continue-on-failure: false
       - name: CI version bump
         uses: phips28/gh-action-bump-version@v9.0.1
           env:
