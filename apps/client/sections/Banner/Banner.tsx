@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 
 export const Banner = () => (
   <div className="pt-24">
@@ -19,7 +18,7 @@ export const Banner = () => (
         </button>
       </div>
       <div className="w-full md:w-3/5 py-6 text-center">
-        <Image className="w-full md:w-4/5 z-50" src="hero.png" alt="Banner" />
+        {/* Banner image placeholder*/}
       </div>
     </div>
   </div>

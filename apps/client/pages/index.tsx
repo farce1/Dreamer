@@ -2,7 +2,7 @@ import { Footer, Nav } from '../components'
 import { Banner, Features, Options, TryYourself } from '../sections'
 
 export const Index = () => (
-  <div>
+  <div className="leading-normal tracking-normal text-white gradient">
     <Nav />
     <Banner />
     <Features />
