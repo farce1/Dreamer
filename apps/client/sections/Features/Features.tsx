@@ -1,38 +1,70 @@
 import React from 'react'
 
 export const Features = () => (
-  <section className="bg-white border-b py-8">
-    <div className="container max-w-5xl mx-auto m-8">
-      <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-        Title
-      </h1>
-      <div className="w-full mb-4">
-        <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-      </div>
-      <div className="flex flex-wrap">
-        <div className="w-5/6 sm:w-1/2 p-6">
-          <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-            Lorem ipsum dolor sit amet
-          </h3>
-          <p className="text-gray-600 mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
-            ipsum eu nunc commodo posuere et sit amet ligula.
-          </p>
+  <section>
+    <div className="my-0 mx-auto max-w-5xl">
+      <div className="rounded border flex flex-wrap -ml-4 -mr-4 items-center">
+        <div className="pl-4 pr-4">
+          <img src="/images/image.svg" alt="Lorem ipsum dolor sit amet" />
         </div>
-        <div className="w-full sm:w-1/2 p-6">{/* image placeholder */}</div>
-      </div>
-      <div className="flex flex-wrap flex-col-reverse sm:flex-row">
-        <div className="w-full sm:w-1/2 p-6 mt-6">
-          {/* image placeholder */}
-        </div>
-        <div className="w-full sm:w-1/2 p-6 mt-6">
-          <div className="align-middle">
-            <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+        <div className="pl-4 pr-4 flex-1 max-w-full">
+          <div>
+            <h2 className="text-secondary text-4xl font-bold mb-10">
               Lorem ipsum dolor sit amet
-            </h3>
-            <p className="text-gray-600 mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              at ipsum eu nunc commodo posuere et sit amet ligula.
+            </h2>
+            <p className="text-lg text-softgray">
+              Duis vitae porta tellus, sed dictum dolor. In hac habitasse platea
+              dictumst. Duis dapibus eros sit amet libero dapibus, et tempus
+              ante suscipit. Nam varius dui quis sagittis sollicitudin. Quisque
+              orci orci, maximus ut consequat posuere, blandit in erat. Integer
+              a sagittis urna, quis blandit lectus. Sed placerat imperdiet odio,
+              vel maximus lectus interdum et. Vivamus imperdiet diam sed urna
+              rutrum ornare
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-wrap -ml-4 -mr-4 items-center">
+        <div className="pl-4 pr-4 flex-1 max-w-full">
+          <div>
+            <h2 className="text-secondary text-4xl font-bold mb-10">
+              Integer accumsan
+            </h2>
+            <p className="text-lg text-softgray">
+              Sed mollis, est eget aliquet rutrum, dui metus luctus elit, a
+              vulputate ipsum enim a purus. Integer placerat urna scelerisque
+              convallis finibus. Proin sit amet laoreet mauris, in vehicula
+              mauris. Donec vitae metus vel nisi sollicitudin convallis et non
+              diam. Aliquam et fringilla velit.
+            </p>
+          </div>
+        </div>
+        <div className="pl-4 pr-4">
+          <img
+            src="/images/image.svg"
+            alt="We are a high-level data storage bank"
+          />
+        </div>
+      </div>
+      <div className="flex flex-wrap -ml-4 -mr-4 items-center">
+        <div className="pl-4 pr-4">
+          <img
+            src="/images/image.svg"
+            alt="We are a high-level data storage bank"
+          />
+        </div>
+        <div className="pl-4 pr-4 flex-1 max-w-full">
+          <div>
+            <h2 className="text-secondary text-4xl font-bold mb-10">
+              Sed vehicula justo dui
+            </h2>
+            <p className="text-lg text-softgray">
+              Integer tellus nunc, facilisis a nisi blandit, tincidunt vulputate
+              eros. Vestibulum feugiat hendrerit nisi, sed aliquam arcu
+              sollicitudin in. Suspendisse ut erat mauris. Phasellus nec tortor
+              est. Nam non lacinia felis. Vestibulum ante ipsum primis in
+              faucibus orci luctus et ultrices posuere cubilia curae; Cras
+              luctus mauris erat, quis pharetra dui venenatis vitae.
             </p>
           </div>
         </div>
