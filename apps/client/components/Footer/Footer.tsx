@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Footer = (): JSX.Element => (
+export const Footer = () => (
   <footer className="bg-white">
     <div className="container mx-auto px-8">
       <div className="w-full flex flex-col md:flex-row py-6">
